@@ -1,0 +1,6 @@
+---
+- name: Cisco Catalyst Center Configuration
+  hosts: sandbox-catalyst
+  gather_facts: false
+  roles:
+    - catalyst

@@ -1,0 +1,11 @@
+- name: Check connection
+  cisco.dnac.network_device_info:
+    dnac_host: "{{ catalyst_host }}"
+    dnac_password: "{{ catalyst_password }}"
+    dnac_username: "{{ catalyst_username }}"
+    dnac_verify: false
+  register: catalyst_device_info_result
+
+- name: Debug message
+  ansible.builtin.debug:
+    msg: "{{ catalyst_device_info_result }}"
