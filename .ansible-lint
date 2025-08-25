@@ -4,8 +4,8 @@ profile: shared
 # Silence infos, warnings and don't show summary
 quiet: true
 
-skip_list:
-  - role-name
+# skip_list:
+#   - role-name
 
 # Enable some useful rules which are opt-in
 enable_list:
